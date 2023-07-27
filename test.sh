@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "run tests"
 cmake --build .
-ctest
+ctest --verbose
