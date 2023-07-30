@@ -26,4 +26,8 @@ Test(sample, fizzbuzz) {
     value = fizzbuzz(5);
     cr_expect_str_eq(value,"Buzz","Buzz");
     free(value);   
+
+    value = fizzbuzz(15);
+    cr_expect_str_eq(value,"FizzBuzz","FizzBuzz");
+    free(value);    
 }

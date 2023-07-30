@@ -18,14 +18,14 @@ endforeach ()
 
 # -----------------------------------
 
-# criterion tests
-find_library(CRITLIB libcriterion.so)
+# criterion test
 add_executable(criterion_test 
 test_criterion.c
 ../src/fizzbuzz.h
 ../src/fizzbuzz.c
 )
 
+find_library(CRITLIB libcriterion.so)
 target_link_libraries(criterion_test ${CRITLIB})
 
 add_test(criterion ../bin/criterion_test)

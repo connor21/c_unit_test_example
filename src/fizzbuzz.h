@@ -3,4 +3,4 @@
 
 char* fizzbuzz(int number);
 
-#endif // MIZZBUZZ_H
+#endif // FIZZBUZZ_H
